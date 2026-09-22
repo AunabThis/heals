@@ -16,6 +16,7 @@ import java.util.List;
 
 public class HomeFragment extends Fragment {
     RecyclerView recyclerView;
+
     List<ParentItems>parentItemsList=new ArrayList<>();
     ParentAdapater parentAdapater;
   @Nullable
