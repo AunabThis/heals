@@ -1,0 +1,118 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F8F2E8"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="115dp"
+                android:text="Enter Your details"
+                android:paddingLeft="40dp"
+
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@drawable/shapelogin"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameLayout"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="50dp"
+                android:textColor="#4C020F"
+                android:textColorHint="#4C020F"
+                android:textSize="20sp"
+                app:hintTextColor="#4C020F"
+                app:endIconMode="password_toggle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="#4C020F"
+                app:endIconTint="#4C020F"
+                app:layout_constraintTop_toBottomOf="@+id/login"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="290dp"
+                    android:layout_height="75dp"
+                    android:hint="UserName"
+
+                    android:textColor="#4C020F"
+                    android:textColorHint="#4C020F"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@+id/login"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordLayout"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#4C020F"
+                android:textColorHint="#4C020F"
+                android:textSize="20sp"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="#4C020F"
+                app:endIconTint="#4C020F"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="#4C020F"
+                app:layout_constraintTop_toBottomOf="@id/usernameLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="290dp"
+                    android:layout_height="80dp"
+                    android:hint="Password"
+                    android:textColor="#4C020F"
+                    android:textColorHint="#4C020F"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@+id/username"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/login1"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+               android:layout_marginTop="30dp"
+                android:layout_marginStart="120dp"
+                android:backgroundTint="#4C020F"
+                android:textColor="@color/white"
+                android:text="Log in"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
+                app:layout_constraintStart_toStartOf="parent"
+               />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

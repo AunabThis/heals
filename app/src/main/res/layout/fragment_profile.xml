@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F2E8">
+
+    <!-- PROFILE TITLE -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="#4C020F"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/profilebg"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"/>
+
+
+
+    <!-- NAME -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="Fatima Balouch"
+        android:textColor="#4C020F"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <!-- EMAIL -->
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="fatima@gmail.com"
+        android:textColor="#4C020F"
+        android:textSize="20sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/editProfile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/eprofilebg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/edit"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="Edit Profile"
+            android:textColor="#4C020F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="›"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:textColor="#5B0011"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+
+    <!-- PHONE -->
+    <LinearLayout
+        android:id="@+id/phoneCard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/eprofilebg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/phone"
+            android:contentDescription="Phone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="+92 300"
+            android:textColor="#4C020F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="›"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:textColor="#5B0011"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+
+    <!-- LOCATION -->
+    <LinearLayout
+        android:id="@+id/locationCard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/eprofilebg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/location"
+            android:contentDescription="Location" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="Quetta,Balochistan"
+            android:textColor="#4C020F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="›"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:textColor="#5B0011"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <!-- MY ORDERS -->
+    <LinearLayout
+        android:id="@+id/ordersCard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/eprofilebg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/clipboard_with_check_mark"
+            android:contentDescription="My Orders" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="My Orders"
+            android:textColor="#4C020F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="›"
+            android:textColor="#5B0011"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+    <!-- FAVOURITE ITEMS -->
+    <LinearLayout
+        android:id="@+id/favouriteCard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/eprofilebg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/favourite"
+            android:contentDescription="Favourite Items" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="Favourite Items"
+            android:textColor="#4C020F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="›"
+            android:textColor="#5B0011"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout"
+       android:layout_width="150dp"
+       android:layout_height="90dp"
+       android:backgroundTint="#4C020F"
+       android:layout_marginStart="130dp"
+       android:text="Log Out"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:textColor="@color/white"
+       android:layout_marginTop="20dp"
+       />
+
+</LinearLayout>
